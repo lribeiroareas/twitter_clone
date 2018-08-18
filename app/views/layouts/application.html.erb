@@ -9,12 +9,19 @@
   </head>
 
   <body>
-  <header>
-  	<div class="notifications">
-  		<p class="notice"> <%= notice %> </p>
-  		<p class="alert"> <%= alert%> </p> 
-  	</div>	
-  </header> 
-    <%= yield %>
+    <header>
+    	<div class="notifications">
+    		<p class="notice"> <%= notice %> </p>
+    		<p class="alert"> <%= alert%> </p> 
+    	</div>	
+    </header> 
+    <section>
+      <%= yield %>
+    </section>
+      
+    <footer>
+        <p>Feito no bootcamp</p>
+    </footer>  
   </body>
+
 </html>
